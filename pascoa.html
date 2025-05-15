@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolateria</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 260px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2b2111;
+}
+
+.menu_top {
+    width: 100%;
+    height: 170px;
+    border-bottom: 3px solid #e5d9be;
+    border-top: 10px solid#e5d9be;
+    background-color: rgb(181, 149, 112);
+}
+
+.top_esp {
+    width: 160px;
+    float: left;
+    padding: 10px;
+}
+
+.top_dir {
+            float: left;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 90px;
+            color: #ffd4b0;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+.menu_donw {
+    background: #a88365;
+    height: 70px;
+    text-align: center;
+}
+
+.menu {
+    color: #a88365;
+    position: relative;
+    top: 15px;
+    padding: 10px;
+}
+
+.menu ul {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    max-width: 90%;
+}
+
+.menu ul li {
+    background-color: #af9d86;
+    width: 20%;
+    height: 40px;
+    float: left;
+    display: inline;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.menu ul li:hover {
+    background-color: #ffffff;
+}
+
+.menu ul {
+    padding: 0;
+    max-width: 500px;
+}
+
+.menu ul li {
+    background-color: #a88365;
+    color: #ffd4b0;
+    float: left;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu ul li:hover {
+    background-color: #554a3b;
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+}
+
+.menu ul ul ul {
+    margin-left: 102px;
+    position: absolute;
+    top: 0px;
+}
+
+.menu ul ul li:hover {
+    background-color: #50493e;
+}
+
+.menu ul ul ul li:hover {
+    background-color: #504434;
+}
+
+input {
+    /* "pesquisar" */
+    width: 20%;
+    height: 30px;
+    font-size: 18px;
+    margin: 45px 0 0 60px;
+    background-color: #ffffff;
+    border: solid rgb(126, 90, 62) 3px;
+    border-radius: 10px;
+    float: left;
+    
+}
+button{
+    width: 42px;
+    height: 33px;
+    font-size: 18px;
+    margin: 45px 0 0 5px;
+    background-color: #ffffff;
+    border: solid rgb(126, 90, 62) 3px;
+    border-radius: 10px;
+    float: left;
+}
+button:hover {
+    background-color: #f5f0ec;
+    color: #4e4437;
+}
+
+.down_down img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 40px 0px;
+    padding: 5px;
+
+}
+
+.down_down {
+    float: left;
+
+}
+
+.clear {
+    clear: both;
+}
+.ovos {
+    background-color: #5c4c3c;
+    float: left;
+    text-align: center;
+}
+.ovos img{
+    padding: 80px;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <body>
+        <div class="menu_top">
+            <div class="top_esp">
+                <figure>
+                    <img src="img/pascoa.png" alt="logo" height="90px">
+                </figure>
+            </div>
+            <div class="top_dir">
+                Chocolateria Rossini
+            </div>
+            <input type="text" name="pesq" placeholder="Pesquisar">
+            <button>OK</button>
+            <div class="down_down">
+                <a href="img/facebook.png" target="_blank"><img src="img/facebook.png" width="20"
+                        height="20"></a>
+                <a href="img/whatsapp.png" target="_blank"><img src="img/whatsapp.png" width="30"
+                        height="30"></a>
+                <a href="img/instagram.png" target="_blank"><img src="img/instagram.png" width="20"
+                        height="20"></a>
+            </div>
+            <div class="clear"></div>
+            <div class="menu_donw">
+                <nav class="menu">
+                    <ul>
+                        <li>HOME
+                            <ul>
+                                <li>preços
+                                   <ul>
+                                      <li>colher R$150</li>
+                                      <li>rec. R$110</li>
+                                      <li>normal 85,90</li>
+                                   </ul>
+                                </li>
+                                <li>envios</li>
+                                <li>detalhes
+                            </ul>
+                        </li>
+                        <li>OVOS
+                            <ul>
+                                <li>recheado</li>
+                                <li>colher</li>
+                                <li>normal</li>
+                            </ul>
+                        </li>
+                        <li>RECHEADOS
+                            <ul>
+                                <li>ovomaltine</li>
+                                <li>oreo</li>
+                                <li>ling de gato</li>
+                                    </ul>
+                        </li>
+                        <li>COLHER
+                            <ul>
+                                <li>ninho/morango</li>
+                                <li>paçoca</li>
+                                <li>kitkat</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="img/banner 2.jpg" height="900" width="100%">
+                <div class="ovos">
+                    <img src="img/ovo ovomaltine.jpg" height="350" width="320">
+                    <img src="img/ovo  oreo.jpg" height="350" width="320">
+                    <img src="img/ovo 2.jpg" height="350" width="320">
+                    <img src="img/paçoca.jpg" height="450" width="320">
+                    <img src="img/ninho.jpg" height="450" width="320">
+                    <img src="img/kitkat.jpg" height="450" width="320">
+                </div>
+            </div>
+
+    </body>
+
+</html>
+
